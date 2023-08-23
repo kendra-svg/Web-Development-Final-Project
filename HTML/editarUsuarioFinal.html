@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/CSS/editarPerfilUsuario.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/JS/editarPerfilUsuario.js"></script>
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingUsuarioFinal.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/buscarEmpleosUsuarioFinal.html">
+            <img
+              src="/Media/Fotos/job-seeker.png"
+              alt="Icono busqueda de trabajos"
+              class="busqueda-empleos-nav"
+            />
+          </a>
+          <a href="/HTML/aplicacionesUsuarioFinal.html">
+            <img
+              src="/Media/Fotos/form.png"
+              alt="Icono de Formulario"
+              class="applicacion-nav"
+            />
+          </a>
+          <a href="/HTML/notificacionesUsuarioFinal.html">
+            <img
+              src="/Media/Fotos/alert.png"
+              alt="Icono de notification"
+              class="notificacion-nav"
+            />
+          </a>
+          <a href="/HTML/editarUsuarioFinal.html">
+            <img
+              src="/Media/Fotos/edit-user-icon.png"
+              alt="Foto de perfil usuario final"
+              class="perfil-nav"
+            />
+          </a>
+          <a href="/HTML/login.html">
+            <img
+              src="/Media/Fotos/logout.png"
+              alt="Icono de cerrar sesión"
+              class="logout-nav"
+            />
+          </a>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section-empleo-img">
+        <img
+          src="/Media/Fotos/header-usario-final.jpg"
+          alt="Imagen de se busca trabajo"
+          class="imagen-busca-trabajo"
+        />
+      </section>
+      <section class="seccion-titulos">
+        <div class="titulo-link">
+          <img
+            src="/Media/Fotos/edit-user-icon.png"
+            alt="Icono de editar usuario"
+            class="seccion-iconos"
+          />
+          <h1>Editar Perfil</h1>
+        </div>
+      </section>
+      <section>
+        <form id="formularioEditarUsuarioFinal">
+          <section>
+            <div class="contenedor-foto-perfil">
+              <div class="foto-perfil">
+                <label for="fotoPerfil">Foto de Perfil</label>
+                <button type="button" id="botonFoto" required>
+                  Seleccionar Imagen
+                </button>
+                <p class="perfil-req">
+                  Formato puede ser JPG, JPEG o PNG. Tamaño máximo 3MB.
+                </p>
+                <div>
+                  <img id="fotoUsuario" class="fotoUsuario" />
+                </div>
+              </div>
+              <div class="foto-perfil">
+                <label for="curriculum">Currículum</label>
+                <button type="button" id="botoncv" required>
+                  Seleccionar Archivo
+                </button>
+                <p class="perfil-req">Formato PDF. Tamaño máximo 3MB.</p>
+              </div>
+            </div>
+            <div class="contenedor-perfil">
+              <div class="perfil">
+                <label for="nombre"> Nombre</label>
+                <input type="text" name="nombre" id="nombre" required />
+              </div>
+              <div class="perfil">
+                <label for="password1">Contraseña</label>
+                <input
+                  type="password"
+                  name="password1"
+                  id="password1"
+                  required
+                />
+              </div>
+
+              <div class="perfil">
+                <label for="apellidos"> Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" required />
+              </div>
+
+              <div class="perfil">
+                <label for="password2">Confirmar Contraseña</label>
+                <input
+                  type="password"
+                  name="password2"
+                  id="password2"
+                  required
+                />
+              </div>
+
+              <div class="perfil">
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" id="correo" readonly />
+              </div>
+
+              <div class="perfil">
+                <label for="genero">Género</label>
+                <select name="genero" id="genero" required>
+                  <option value="selected" disabled>Seleccion Género</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="No Especifica">Prefiero no especificar</option>
+                </select>
+              </div>
+            </div>
+          </section>
+        </form>
+        <section>
+          <div class="botones-perfil">
+            <div class="boton-perfil-style">
+              <input
+                id="guardarPerfilBtn"
+                type="submit"
+                value="Guardar Perfil"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Experiencia -->
+      <section>
+        <div class="overlay">
+          <div class="contenedor-exp">
+            <h2>Experiencia</h2>
+            <div class="contenedor-experiencia">
+              <div class="perfil">
+                <label for="tituloExperiencia">Título</label>
+                <input
+                  type="text"
+                  name="tituloExperiencia"
+                  id="tituloExperiencia"
+                  required
+                />
+              </div>
+              <div class="perfil">
+                <label for="fechaInicio">Fecha de Inicio</label>
+                <input
+                  type="date"
+                  name="fechaInicioExperiencia"
+                  id="fechaInicioExperiencia"
+                  required
+                />
+              </div>
+              <div class="perfil">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" id="empresa" required />
+              </div>
+              <div class="perfil">
+                <label for="fechaFinal">Fecha de Finalización</label>
+                <input
+                  type="date"
+                  name="fechaFinExperiencia"
+                  id="fechaFinExperiencia"
+                />
+              </div>
+            </div>
+            <div class="btn-posicion">
+              <input
+                id="posicionActual"
+                class="checkbox-posicion-actual"
+                type="checkbox"
+              />
+              <label for="posicionActual">Posición Actual</label>
+            </div>
+          </div>
+
+          <div class="experiencia">
+            <label for="descripcion">Descripción</label>
+            <textarea
+              name="descripcion"
+              id="descripcionTrabajo"
+              cols="30"
+              rows="10"
+              overflow="auto"
+            ></textarea>
+          </div>
+
+          <div class="btn-agregar">
+            <button class="btn-agregar-style" id="agregarExperiencia">
+              Agregar Experiencia
+            </button>
+          </div>
+          <div class="cajaData">
+            <table id="tablaEperiencia" class="tabla">
+              <thead>
+                <th>Título</th>
+                <th>Empresa</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Finalización</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+              </thead>
+              <tbody id="tablaExperienciaBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Educación -->
+      <section>
+        <div class="overlay">
+          <div class="contenedor-exp">
+            <h2>Educación</h2>
+            <div class="contenedor-experiencia">
+              <div class="perfil">
+                <label for="education">Nivel educativo:</label>
+                <select id="education" name="education" required>
+                  <option value="" disabled selected>
+                    Seleccionar nivel educativo
+                  </option>
+                  <option value="Educación primaria">Educación primaria</option>
+                  <option value="Educación secundaria">
+                    Educación secundaria
+                  </option>
+                  <option value="Bachillerato">Bachillerato</option>
+                  <option value="Licenciatura">Licenciatura</option>
+                  <option value="Maestría">Maestría</option>
+                  <option value="Doctorado">Doctorado</option>
+                </select>
+              </div>
+              <div class="perfil">
+                <label for="fechaInicio">Fecha de Inicio</label>
+                <input
+                  type="date"
+                  name="fechaInicioEducacion"
+                  id="fechaInicioEducacion"
+                  required
+                />
+              </div>
+              <div class="perfil">
+                <label for="institucion">Institución</label>
+                <input
+                  type="text"
+                  name="institucion"
+                  id="institucion"
+                  required
+                />
+              </div>
+              <div class="perfil">
+                <label for="fechaFinal">Fecha de Finalización</label>
+                <input
+                  type="date"
+                  name="fechaFinalEducacion"
+                  id="fechaFinalEducacion"
+                  required
+                />
+              </div>
+            </div>
+            <div class="experiencia">
+              <label for="descripcion">Descripción</label>
+              <textarea
+                name="descripcion"
+                id="descripcionEducacion"
+                cols="30"
+                rows="10"
+                overflow="auto"
+              ></textarea>
+            </div>
+
+            <div class="btn-agregar">
+              <button class="btn-agregar-style" id="agregarEducacion">
+                Agregar Educación
+              </button>
+            </div>
+          </div>
+          <div class="cajaData">
+            <table id="tablaEducacion" class="tabla">
+              <thead>
+                <th>Nivel educativo</th>
+                <th>Institución</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Finalización</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+              </thead>
+              <tbody id="tbodyEducacion"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="/Media/Fotos/logo-script-elite.png"
+        alt="Logo de la empresa Script Elite"
+      />
+    </footer>
+  </body>
+</html>

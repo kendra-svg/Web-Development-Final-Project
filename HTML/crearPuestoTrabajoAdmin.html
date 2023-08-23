@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Puesto</title>
+
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/crearPuestoTrabajo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/JS/crearPuestoTrabajoAdmin.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingAdministrador.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/notificacionesAdministrador.html">
+            <img
+              src="/Media/Fotos/alert.png"
+              alt="Icono de notification"
+              class="notificacion-nav"
+            />
+          </a>
+          <a href="/HTML/editarPerfilAdministrador.html">
+            <img
+              src="/Media/Fotos/edit-user-icon.png"
+              alt="Foto de perfil usuario final"
+              class="perfil-nav"
+            />
+          </a>
+          <a href="/HTML/login.html">
+            <img
+              src="/Media/Fotos/logout.png"
+              alt="Icono de cerrar sesión"
+              class="logout-nav"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion-empresa-img">
+        <img
+          src="/Media/Fotos/empresa-landing.jpg"
+          alt="Imagen landing page para empresas de un edificio con computadores"
+          class="imagen-empresa-landing"
+        />
+      </section>
+      <section class="seccion-titulos">
+        <div class="titulo-link">
+          <img
+            src="/Media/Fotos/job-seeker.png"
+            alt="Icono de crear puesto de trabajo"
+            class="seccion-iconos"
+          />
+          <h1>Crear Puesto de Trabajo</h1>
+        </div>
+      </section>
+      <section class="seccion-puestos">
+        <form id="crearPuestoForm">
+          <div class="container-puestos">
+            <div class="input-puesto">
+              <label for="nombre"> Nombre del Puesto</label>
+              <input type="text" name="nombre" id="nombre" required />
+            </div>
+
+            <div class="input-puesto">
+              <label for="visibilidad">Visibilidad</label>
+              <select name="visibilidad" id="visibilidad" required>
+                <option value="Pública">Público</option>
+                <option value="Privada">Privado</option>
+              </select>
+            </div>
+
+            <div class="input-puesto">
+              <label for="rangoSalarial"> Rango Salarial</label>
+              <select name="rangoSalarial" id="rango-salarial"></select>
+            </div>
+
+            <div class="input-puesto">
+              <label for="requisitosMinimos">Requisitos Mínimos</label>
+              <textarea
+                name="requisitosMinimos"
+                id="requisitosMinimos"
+                cols="30"
+                rows="10"
+                ovwerflow="auto"
+                required
+              ></textarea>
+            </div>
+
+            <div class="input-puesto">
+              <label for="requisitosDeseados">Requisitos Deseados</label>
+              <textarea
+                name="requisitosDeseados"
+                id="requisitosDeseados"
+                cols="30"
+                rows="10"
+                ovwerflow="auto"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="botones-perfil">
+            <div class="boton-perfil-style">
+              <button type="submit" id="crearPuesto">Crear Puesto</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="/Media/Fotos/logo-script-elite.png"
+        alt="Logo de la empresa Script Elite"
+      />
+    </footer>
+  </body>
+</html>

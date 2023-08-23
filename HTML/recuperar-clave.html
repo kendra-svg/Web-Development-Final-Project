@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperación de clave</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+
+    <link rel="stylesheet" type="text/css" href="/CSS/recuperar-clave.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/JS/recuperarClave.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingPageInicial.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/login.html">
+            <button class="buttones-header">Iniciar Sesión</button>
+          </a>
+          <a href="/HTML/elegir-cuenta.html">
+            <button class="buttones-header">Crear Cuenta</button>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <p class="texto-recuperar-clave">Recuperar clave</p>
+      <form id="formRecuperarClave">
+        <label for="correo" class="text-label">Correo electrónico</label>
+        <input id="correo" type="email" class="textbox" required />
+        <div class="text-form">
+          <p>
+            Ingresa tu correo, y si está en nuestra base de datos te enviaremos
+            una contraseña temporal.
+          </p>
+        </div>
+        <hr class="linea-horizontal" />
+        <div class="btn-form">
+          <button type="submit" class="button-enviar-clave">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

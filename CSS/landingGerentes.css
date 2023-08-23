@@ -1,0 +1,50 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.contenedor-acciones-admin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.accion-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 300px;
+    background-color: #27346961;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #f3f4f6ff;
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fafaffff;
+}
+  
+.iconos-acciones {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+ 
+.accion-admin-centered {
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+.seccion-titulos {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;  
+    color: #273469FF
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrar Empleado</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/CSS/administrarEmpleados.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/JS/administrarEmpleados.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingAdministrador.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/notificacionesAdministrador.html">
+            <img
+              src="/Media/Fotos/alert.png"
+              alt="Icono de notification"
+              class="notificacion-nav"
+            />
+          </a>
+          <a href="/HTML/editarPerfilAdministrador.html">
+            <img
+              src="/Media/Fotos/edit-user-icon.png"
+              alt="Foto de perfil usuario final"
+              class="perfil-nav"
+            />
+          </a>
+          <a href="/HTML/login.html">
+            <img
+              src="/Media/Fotos/logout.png"
+              alt="Icono de cerrar sesión"
+              class="logout-nav"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion-empresa-img">
+        <img
+          src="/Media/Fotos/empresa-landing.jpg"
+          alt="Imagen landing page para empresas de un edificio con computadores"
+          class="imagen-empresa-landing"
+        />
+      </section>
+      <section class="seccion-titulos">
+        <div class="titulo-link">
+          <img
+            src="/Media/Fotos/edit-user-icon.png"
+            alt="Icono de administrar puestos"
+            class="seccion-iconos"
+          />
+          <h1>Administrar Empleados</h1>
+        </div>
+      </section>
+      <div class="contenedor">
+        <div>
+          <p class="texto-alinear">Invitar empleado</p>
+          <div class="cuadro1">
+            <form id="formInvitarEmpleado">
+              <div class="subcontenedorv3">
+                <label for="correo" class="texto-labels">Correo:</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  id="correo"
+                  name="email"
+                  required
+                />
+
+                <label for="contrasena" class="texto-labels">Contraseña:</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  id="contrasena"
+                  name="contrasena"
+                  required
+                />
+
+                <label for="nombre" class="texto-labels">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  id="nombre"
+                  name="nombre"
+                  required
+                />
+                <label for="apellidosInv" class="texto-labels"
+                  >Apellidos:</label
+                >
+                <input
+                  type="text"
+                  class="form-input"
+                  id="apellidos"
+                  name="apellidos"
+                  required
+                />
+
+                <label for="genero" class="texto-labels">Genero:</label>
+                <select id="genero" class="form-dropdown">
+                  <option value="" selected disabled>
+                    Selecciona un género
+                  </option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="No especifica">Prefiero no especificar</option>
+                </select>
+
+                <label for="rol" class="texto-labels">Asignar un rol:</label>
+                <select id="rol" name="rol" class="form-dropdown" required>
+                  <option value="" selected disabled>Selecciona un rol</option>
+                  <option value="Gerente">Gerente</option>
+                  <option value="Reclutador">Reclutador</option>
+                </select>
+                <div class="btn">
+                  <button
+                    type="button"
+                    class="button-color"
+                    id="btnEnviarInvitacion"
+                  >
+                    Enviar invitación
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <p class="texto-alinear">Editar perfil de empleado</p>
+          <div class="cuadro2">
+            <form>
+              <div class="subcontenedorv2">
+                <label for="buscarCorreo" class="texto-labelsv2"
+                  >Administrar usuario</label
+                >
+                <select
+                  id="editarPerfilDropDown"
+                  class="form-dropdownfv"
+                  name="email"
+                  required
+                >
+                  <option value="elijaOpcion1" disabled selected>
+                    Seleccionar usuario
+                  </option>
+                </select>
+                <label for="rolActualEditar" class="texto-labelsv2"
+                  >Rol actual</label
+                >
+                <input
+                  type="text"
+                  class="form-input4"
+                  id="rolActualEditar"
+                  name="rolActualEditar"
+                  disabled
+                />
+
+                <label for="accion" class="texto-labelsv2">Nuevo rol</label>
+                <select
+                  id="editarRol"
+                  name="accion"
+                  class="form-dropdownfv"
+                  required
+                >
+                  <option value="opcion0" disabled selected>
+                    Seleccionar rol
+                  </option>
+                  <option value="Reclutador">Reclutador</option>
+                  <option value="Gerente">Gerente</option>
+                </select>
+
+                <button type="button" id="editarCambios" class="button-colorv3">
+                  Guardar Cambios
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <p class="texto-alinear">Eliminar empleado</p>
+          <div class="cuadro3">
+            <form>
+              <div class="subcontenedorv2">
+                <label for="buscarCorreoEliminar" class="texto-labels"
+                  >Elegir usuario</label
+                >
+
+                <select
+                  id="eliminarPerfilDropDown"
+                  class="form-dropdown"
+                  name="email"
+                  required
+                >
+                  <option value="elijaOpcion2" disabled selected>
+                    Seleccione usuario
+                  </option>
+                </select>
+                <label for="nombreEliminar" class="texto-labelsv2"
+                  >Nombre</label
+                >
+                <input
+                  type="text"
+                  class="form-inputv2"
+                  id="nombreEliminar"
+                  name="nombreEliminar"
+                  disabled
+                />
+                <label for="apellidosEliminar" class="texto-labelsv3"
+                  >Apellidos</label
+                >
+                <input
+                  type="text"
+                  class="form-inputv3"
+                  id="apellidosEliminar"
+                  name="apellidosEliminar"
+                  disabled
+                />
+                <label for="rolEliminar" class="texto-labelsv3">Rol</label>
+                <input
+                  type="text"
+                  class="form-inputv3"
+                  id="rolEliminar"
+                  name="rolEliminar"
+                  disabled
+                />
+
+                <button type="button" id="eliminarPerfil" class="button-color">
+                  Eliminar usuario
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="/Media/Fotos/logo-script-elite.png"
+        alt="Logo de la empresa Script Elite"
+      />
+    </footer>
+  </body>
+</html>

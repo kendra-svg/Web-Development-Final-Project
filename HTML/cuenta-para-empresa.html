@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Cuenta Empresa</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/CSS/cuenta-para-empresa.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/JS/cuentaParaEmpresa.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingPageInicial.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/login.html">
+            <button class="buttones-header">Iniciar Sesión</button>
+          </a>
+          <a href="/HTML/elegir-cuenta.html">
+            <button class="buttones-header">Crear Cuenta</button>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <form class="form" id="formularioDatosEmpresa">
+        <p class="texto-cuenta-empresa">Cuenta para Empresa</p>
+        <div class="subcontainer">
+          <div class="container-form">
+            <label class="color-texto-formulario">Nombre de Empresa</label>
+            <input type="text" class="textbox" id="nombre" required />
+            <label class="color-texto-formulario">Correo electrónico</label>
+            <input type="email" class="textbox" id="email" required />
+            <label class="color-texto-formulario">Clave</label>
+            <input type="password" class="textbox" id="clave" required />
+            <label class="color-texto-formulario">Confirmar clave</label>
+            <input
+              type="password"
+              class="textbox"
+              id="confirmarClave"
+              required
+            />
+          </div>
+          <div class="container-photo">
+            <p class="color-texto-foto-perfil">Foto de perfil</p>
+            <div>
+              <img id="fotoUsuario" class="fotoUsuario" />
+              <button
+                type="button"
+                class="botonGuardar"
+                id="botonFoto"
+                required
+              >
+                Seleccionar Imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-form">
+          <button type="submit" class="button-completar">Completar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

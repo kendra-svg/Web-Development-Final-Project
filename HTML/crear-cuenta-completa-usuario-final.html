@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crear cuenta usuario</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+
+    <link rel="stylesheet" type="text/css" href="/CSS/crear-cuenta-completa-usuario-final.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet" />
+    <script src="/JS/crearCuentaCompletaUsuarioFinal.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/HTML/landingPageInicial.html">
+                <img src="/Media/Fotos/logo-script-elite.png" alt="logo" class="logo" />
+            </a>
+            <div class="navegacion-derecha">
+                <a href="/HTML/login.html">
+                    <button class="buttones-header3">Iniciar Sesión</button>
+                </a>
+                <a href="/HTML/elegir-cuenta.html">
+                    <button class="buttones-header3">Crear Cuenta</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedorGeneral">
+        <form id="formularioGeneralUsuario">
+            <section> <!-----------SECCION 0-------------->
+                <div class="contenedor0">
+                    <div class="texto-cuenta-empresa0">
+                        <p class="estilo-titulo0">Datos personales</p>
+                    </div>
+                    <div class="column0">
+                        <label for="nombre" class="formato-y-color-texto-columna-derecha0">Nombre</label>
+                        <input type="text" class="textbox0 " id="nombre" required>
+                        <label for="apellido" class="formato-y-color-texto-columna-derecha0">Apellidos</label>
+                        <input type="text" class="textbox0" id="apellido" required>
+                        <label for="opcionesGenero" class="formato-y-color-texto-columna-derecha0">Género</label>
+                        <select id="opcionesGenero" class="dropdown0" required>
+                            <option value="opcionGenero0" disabled selected>Seleccione una opción</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="No Especifica">Prefiero no especificar</option>
+                        </select>
+                    </div>
+                    <div class="column0">
+                        <label for="email" class="formato-y-color-texto-columna-derecha0">Correo electrónico</label>
+                        <input type="email" class="textbox0" id="email" required>
+                        <label for="clave" class="formato-y-color-texto-columna-derecha0">Clave</label>
+                        <input type="password" class="textbox0" id="clave" required>
+                        <label for="confirmarClave" class="formato-y-color-texto-columna-derecha0">Confirmar
+                            clave</label>
+                        <input type="password" class="textbox0" id="confirmarClave" required>
+                    </div>
+                </div>
+            </section>
+
+            <section> <!-----------SECCION 1-------------->
+                <div class="contenedor1">
+                    <div class="texto-cuenta-empresa1">
+                        <p class="estilo-titulo1">Agregar educación</p>
+                    </div>
+                    <div class="column1">
+                        <label for="centroEducativo" class="color-texto-formulario1">Institución*</label>
+                        <input type="text" class="textbox1 " id="centroEducativo" required>
+                        <label for="gradoAcademico" class="color-texto-formulario1">Nivel educativo*</label>
+                        <select id="gradoAcademico" class="dropdown1" name="gradoAcademico" required>
+                            <option value="" selected disabled>Seleccionar nivel educativo</option>
+                            <option value="primaria">Educación primaria</option>
+                            <option value="secundaria">Educación secundaria</option>
+                            <option value="bachillerato">Bachillerato</option>
+                            <option value="licenciatura">Licenciatura</option>
+                            <option value="maestria">Maestría</option>
+                            <option value="doctorado">Doctorado</option>
+                        </select>
+
+                        <label for="fechaInicio" class="color-texto-formulario1">Fecha de inicio*</label>
+                        <input type="date" class="textbox1" id="fechaInicioAcademica" required>
+                        <label for="fechaFinal" class="color-texto-formulario1">Fecha de finalizacion (o fecha
+                            prevista)*</label>
+                        <input type="date" class="textbox1" id="fechaFinalAcademica" required>
+                        <div class="form-text-instrucciones1">
+                            <p class="texto-instrucciones1">TENGA EN CUENTA QUE PARA AGREGAR MÁS DE 1 APARTADO DE
+                                EDUCACIÓN, DEBE REALIZARLO DESDE EDITAR PERFIL UNA VEZ CREADA SU CUENTA.</p>
+                            <p class="texto-instrucciones1">CAMPOS CON * SON OBLIGATORIOS*</p>
+                        </div>
+                    </div>
+            </section>
+            <section> <!-----------SECCION 2-------------->
+                <div class="contenedor2">
+                    <div class="texto-cuenta-empresa2">
+
+                        <p class="estilo-subtitulo2">Agregar experiencia laboral</p>
+                    </div>
+                    <div class="column-2-2">
+
+                        <label for="empresa" class="color-texto-formulario2">Empresa</label>
+                        <input type="text" class="textbox2 " id="empresa" required>
+                        <label for="tituloEmpresa" class="color-texto-formulario2">Título</label>
+                        <input type="text" class="textbox2" id="tituloEmpresa" required>
+                        <div class="form-checkbox-1-2">
+                            <input type="checkbox" class="checkbox2" name="actualmenteTrabaja" id="actualmenteTrabaja">
+                            <label for="actualmenteTrabaja" class="formato-y-color-texto-centrado2">Actualmente trabajo
+                                acá</label>
+                        </div>
+                        <div class=column2-2>
+                            <div class="form-descripcion2">
+                                <label for="descripcionRol" class="color-texto-formulario-1-2">Descripción</label>
+                                <input type="text" class="textarea2" id="descripcionRol" >
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="column2">
+                        <label for="fechaInicio" class="formato-y-color-texto-columna-derecha2">Fecha de incio</label>
+                        <input type="date" id="fechaInicioLaboral" required>
+
+                        <label for="fechaFinalizacion" class="formato-y-color-texto-columna-derecha2">Fecha de
+                            finalización</label>
+                        <input type="date" id="fechaFinalizacionLaboral" required>
+                    </div>
+
+
+                    <div class="form-text-instrucciones2">
+                        <p class="texto-instrucciones2">TENGA EN CUENTA QUE PARA AGREGAR MÁS DE 1 APARTADO DE
+                            EXPERIENCIA LABORAL,
+                            DEBE REALIZARLO DESDE EDITAR PERFIL UNA VEZ CREADA SU CUENTA. </p>
+                    </div>
+            </section>
+            <section> <!-----------SECCION 3-------------->
+                <div class="contenedor3">
+                    <div class="texto-cuenta-empresa3">
+                        <p class="estilo-titulo3">Agregar archivos</p>
+                    </div>
+                    <div class="column3">
+
+                        <div class="ajuste-texto-y-foto3">
+                            <p class="color-texto-foto-perfil3">Foto de perfil</p>
+                            <div>
+                                <img id="fotoUsuario" class="fotoUsuario">
+                                <button type="button" class="botonGuardar " id="botonFoto" required>Seleccionar Imagen</button>
+                            </div>
+                            <p class="estilo-texto-pequeno3">Se permiten archivos tipo JPG, JPEG, y PNG. </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column3">
+                        <div class="ajuste-texto-y-foto3">
+                            <p class="color-texto-foto-perfil3">Curriculum Vitae</p>
+                            <div class="photo-input3">
+                                <button type="button" class="botonGuardar " id="botoncv" required>Seleccionar Archivo</button>
+                            </div>
+                            <p class="estilo-texto-pequeno3">Se permiten archivos tipo PDF únicamente.</p>
+
+                        </div>
+
+
+                    </div>
+                    <p class="estilo-texto-inferior3">TENGA EN CUENTA QUE TANTO LA FOTO DE PERFIL COMO EL ARCHIVO DE
+                        CURRICULUM NO DEBE SER MAYOR A 3MB.</p>
+
+                    <div class="btn-form3">
+                        <button type="submit" class="button-completar3">Completar perfil</button>
+                    </div>
+                </div>
+
+                <p id="mensaje-error"></p>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>

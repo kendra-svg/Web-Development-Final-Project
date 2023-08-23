@@ -1,0 +1,145 @@
+/* CSS reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-family: 'Sarabun', sans-serif;
+}
+
+body{
+    background: #FAFAFFFF;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #8893C1;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #273469;
+}
+.navegacion-derecha{
+    display: flex;
+    gap: 25px;
+}
+
+.logo {
+    width: 45px; 
+    height: 65px; 
+    border-radius: 0px;
+    padding: 10px 0px; 
+    margin-left: 40px;
+}
+
+.busqueda-empleos-nav {
+    width: 35px; 
+    height: 35px; 
+    fill: #273469FF;
+}
+
+.applicacion-nav {
+    width: 35px; 
+    height: 35px; 
+    fill: #273469FF;
+}
+
+.notificacion-nav {
+    width: 35px; 
+    height: 35px; 
+    fill: #273469FF;
+}
+
+.perfil-nav {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 22px; 
+    border-width: 2px; 
+    border-color: #273469; 
+}
+
+.logout-nav {
+    width: 35px; 
+    height: 35px; 
+}
+
+.section-empleo-img {
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagen-busca-trabajo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.seccion-empresa-img {
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.imagen-empresa-landing {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+footer {
+    background-color: #53555C;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    margin-top: 100px;
+    left: 0;
+    bottom: 0;
+}
+
+footer img {
+    width: 150px; 
+    height: 180px; 
+    margin-right: 20px;
+}   

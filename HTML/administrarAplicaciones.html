@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrar Aplicaciones</title>
+
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/CSS/administrarAplicaciones.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/JS/administrarAplicacionesAdmin.js"></script>
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingAdministrador.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/notificacionesAdministrador.html">
+            <img
+              src="/Media/Fotos/alert.png"
+              alt="Icono de notification"
+              class="notificacion-nav"
+            />
+          </a>
+          <a href="/HTML/editarPerfilAdministrador.html">
+            <img
+              src="/Media/Fotos/edit-user-icon.png"
+              alt="Foto de perfil usuario final"
+              class="perfil-nav"
+            />
+          </a>
+          <a href="/HTML/login.html">
+            <img
+              src="/Media/Fotos/logout.png"
+              alt="Icono de cerrar sesión"
+              class="logout-nav"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion-empresa-img">
+        <img
+          src="/Media/Fotos/empresa-landing.jpg"
+          alt="Imagen landing page para empresas de un edificio con computadores"
+          class="imagen-empresa-landing"
+        />
+      </section>
+      <section class="seccion-titulos">
+        <div class="titulo-link">
+          <img
+            src="/Media/Fotos/form.png"
+            alt="Icono de administrar aplicaciones"
+            class="seccion-iconos"
+          />
+          <h1>Invitar Aplicantes</h1>
+        </div>
+      </section>
+      <section class="centro-secciones">
+        <section class="seccion-invitaciones">
+          <form id="invitar-usuarios">
+            <div class="invitaciones">
+              <label for="correo">Correo Usuario</label>
+              <input type="email" name="correo" id="correo" required />
+              <label for="puesto">Puesto de Trabajo</label>
+              <select name="puesto" id="puesto"></select>
+              <input
+                type="submit"
+                name="Invitar"
+                id="invitar"
+                value="Invitar"
+              />
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="seccion-titulos">
+        <div class="titulo-link">
+          <img
+            src="/Media/Fotos/form.png"
+            alt="Icono de administrar aplicaciones"
+            class="seccion-iconos"
+          />
+          <h1>Administrar Aplicaciones</h1>
+        </div>
+      </section>
+      <section class="centro-secciones" id="aplicaciones-center"></section>
+    </main>
+    <footer>
+      <img
+        src="/Media/Fotos/logo-script-elite.png"
+        alt="Logo de la empresa Script Elite"
+      />
+    </footer>
+  </body>
+</html>

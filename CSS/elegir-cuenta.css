@@ -1,0 +1,125 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 722px;
+    height: 650px;
+    background: #273469FF;
+    /* tertiary2-500 */
+    border-radius: 8px;
+    /* border-xl */
+    box-shadow: 0px 17px 35px #171a1f, 0px 0px 2px #171a1f;
+    /* shadow-xl */
+}
+
+.texto-tipo-cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Body */
+    font-size: 32px;
+    line-height: 48px;
+    color: #FAFAFFFF;
+    margin: 58px 0px 13px;
+    margin-bottom: 50px;
+    /* secondary-500 */
+}
+
+.seccion-tipo-cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.seccion-tipo-cuenta img {
+    width: 90px;
+    height: 90px;
+}
+
+.contenedor-tipo-cuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 160px;
+    background-color: #FAFAFFFF;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.contenedor-tipo-cuenta:hover {
+    cursor: pointer;
+    background-color: #DEE1E6FF;
+}
+
+.contenedor-tipo-cuenta p {
+    /* Body */
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #273469FF;
+    /* tertiary2-500 */
+}
+
+.contenedor-tipo-cuenta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.buttones-header {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Sarabun;
+    /* Body */
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFFFF;
+    /* white */
+    background: #30343FFF;
+    /* primary-500 */
+    opacity: 1;
+    border: none;
+    border-radius: 4px;
+    /* border-m */
+}
+
+/* Hover */
+.buttones-header:hover {
+    color: #FFFFFFFF;
+    /* white */
+    background: #24272FFF;
+    /* primary-700 */
+}
+
+/* Pressed */
+.buttones-header:hover:active {
+    color: #FFFFFFFF;
+    /* white */
+    background: #17191FFF;
+    /* primary-900 */
+}
+
+/* Disabled */
+.buttones-header:disabled {
+    opacity: 0.4;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html {
+    font-family: 'Sarabun', sans-serif;
+}

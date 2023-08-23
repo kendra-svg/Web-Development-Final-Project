@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" type="text/css" href="/CSS/header-footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/CSS/editarPerfilAdministrador.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/JS/editarPerfilAdmin.js"></script>
+
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/HTML/landingAdministrador.html">
+          <img
+            src="/Media/Fotos/logo-script-elite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div class="navegacion-derecha">
+          <a href="/HTML/notificacionesAdministrador.html">
+            <img
+              src="/Media/Fotos/alert.png"
+              alt="Icono de notification"
+              class="notificacion-nav"
+            />
+          </a>
+          <a href="/HTML/editarPerfilAdministrador.html">
+            <img
+              src="/Media/Fotos/edit-user-icon.png"
+              alt="Foto de perfil usuario final"
+              class="perfil-nav"
+            />
+          </a>
+          <a href="/HTML/login.html">
+            <img
+              src="/Media/Fotos/logout.png"
+              alt="Icono de cerrar sesión"
+              class="logout-nav"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion-empresa-img">
+        <img
+          src="/Media/Fotos/empresa-landing.jpg"
+          alt="Imagen landing page para empresas de un edificio con computadores"
+          class="imagen-empresa-landing"
+        />
+      </section>
+      <section class="seccion-titulos">
+        <div class="titulo-link">
+          <img
+            src="/Media/Fotos/edit-user-icon.png"
+            alt="Icono de editar usuario"
+            class="seccion-iconos"
+          />
+          <h1>Editar Perfil</h1>
+        </div>
+      </section>
+      <section>
+        <form id="editarPerfilEmpresa">
+          <div class="contenedor-foto-perfil">
+            <div class="foto-perfil">
+              <label for="fotoPerfil">Foto de Perfil</label>
+              <button type="button" id="botonFoto" required>
+                Seleccionar Imagen
+              </button>
+              <div>
+                <img id="fotoUsuario" class="fotoUsuario" />
+              </div>
+            </div>
+          </div>
+          <div class="contenedor-perfil">
+            <div class="perfil">
+              <label for="nombre"> Nombre de la Empresa</label>
+              <input type="text" name="nombre" id="nombreEmpresa" required />
+            </div>
+            <div class="perfil">
+              <label for="password1">Contraseña</label>
+              <input type="password" name="password1" id="password1" required />
+            </div>
+            <div class="perfil">
+              <label for="correo">Correo</label>
+              <input type="email" name="correo" id="correoEmpresa" readonly />
+            </div>
+
+            <div class="perfil">
+              <label for="password2">Confirmar Contraseña</label>
+              <input type="password" name="password2" id="password2" required />
+            </div>
+          </div>
+          <div class="contenedor-descripcion">
+            <div class="perfil">
+              <label for="descripcion"> Descripcion (Opcional)</label>
+              <textarea
+                name="descripcion"
+                id="descripcion"
+                cols="30"
+                rows="10"
+                placeholder="Escribe una descripcion de tu empresa"
+              ></textarea>
+            </div>
+          </div>
+          <div class="botones-perfil">
+            <div class="boton-perfil-style">
+              <input id="guardarPefil" type="submit" value="Guardar Perfil" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="/Media/Fotos/logo-script-elite.png"
+        alt="Logo de la empresa Script Elite"
+      />
+    </footer>
+  </body>
+</html>
